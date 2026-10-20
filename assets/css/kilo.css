@@ -1,0 +1,125 @@
+/* Kilo devlog: a garden at dawn, seen from 10 cm up. */
+:root {
+  --dew: #EEF2E3;
+  --leaf-wash: #DEE6CB;
+  --loam: #2B2417;
+  --loam-soft: #5A503C;
+  --pickle: #4B661A;
+  --trail: #8A6A43;
+  --sun: #F2B33D;
+  --barn: #9E3B2C;
+  --measure: 40rem;
+  --serif: "Young Serif", Georgia, serif;
+  --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dew: #141A0F;
+    --leaf-wash: #222B19;
+    --loam: #E4E9D4;
+    --loam-soft: #AEB59B;
+    --pickle: #B3CF73;
+    --trail: #A88A5F;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--dew);
+  color: var(--loam);
+  font: 1.0625rem/1.65 var(--sans);
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--pickle); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; border-radius: 2px; }
+
+.skip { position: absolute; left: -999px; top: 0.5rem; background: var(--loam); color: var(--dew); padding: 0.4rem 0.8rem; z-index: 10; }
+.skip:focus { left: 0.5rem; }
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1rem; }
+
+/* Masthead: the garden is the memorable thing; everything else stays quiet. */
+.masthead { position: relative; height: clamp(300px, 46vw, 460px); overflow: hidden; background: #A9CBD6; }
+.is-inner .masthead { height: 150px; }
+.garden { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.scale-label { font: 600 11px var(--sans); fill: #2B2417; }
+.is-inner .scale, .is-inner .scale-label { display: none; }
+.masthead-text {
+  position: relative;
+  max-width: 60rem; margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 3rem) 1rem 0;
+}
+.wordmark {
+  display: inline-block;
+  font: 400 clamp(3.5rem, 11vw, 7.5rem)/0.9 var(--serif);
+  color: #2B2417;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.is-inner .wordmark { font-size: 2.75rem; }
+.tagline {
+  max-width: 22rem; margin: 0.75rem 0 0;
+  font: 400 clamp(1rem, 2.2vw, 1.25rem)/1.4 var(--serif);
+  color: #3B321F;
+}
+
+/* Navigation sits on the soil line under the garden. */
+.site-nav {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem 1.25rem;
+  padding: 0.7rem 1rem;
+  background: #6E5233; font-size: 0.95rem;
+}
+.site-nav a { color: #F3E9D2; text-decoration: none; padding: 0.15rem 0; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: #FFFFFF; box-shadow: inset 0 -2px 0 var(--sun); }
+
+main { padding-top: 2.5rem; padding-bottom: 2rem; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
+.prose h2 { font-size: 1.5rem; margin: 2.25rem 0 0.5rem; }
+.prose p, .prose ul { margin: 0 0 1.1rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose li::marker { color: var(--pickle); }
+.prose blockquote { margin: 1.5rem 0; padding-left: 1rem; border-left: 3px solid var(--sun); color: var(--loam-soft); }
+.prose img { display: block; margin: 1.5rem 0; border-radius: 6px; }
+
+.intro { font-size: 1.125rem; }
+.section-title { font-size: 1.6rem; margin: 2.5rem 0 1rem; }
+
+/* The trail log: posts are stops along an ant trail, newest first. */
+.trail { list-style: none; margin: 0; padding: 0 0 0 2rem; position: relative; }
+.trail::before {
+  content: ""; position: absolute; left: 0.55rem; top: 0.4rem; bottom: 0.4rem;
+  border-left: 2px dashed var(--trail);
+}
+.trail-stop { position: relative; padding-bottom: 2rem; }
+.trail-stop::before {
+  /* a pickle, for scale */
+  content: ""; position: absolute; left: -1.75rem; top: 0.35rem;
+  width: 0.7rem; height: 1.3rem; border-radius: 0.35rem;
+  background: var(--pickle); box-shadow: 0 0 0 4px var(--dew);
+}
+.trail-stop time, .post-head time { font-size: 0.9rem; color: var(--loam-soft); }
+.trail-stop h3 { font-size: 1.45rem; margin: 0.15rem 0 0.4rem; }
+.trail-stop h3 a { color: var(--loam); text-decoration: none; }
+.trail-stop h3 a:hover { color: var(--pickle); text-decoration: underline; }
+.trail-stop p { margin: 0; color: var(--loam-soft); }
+
+.post-head { margin-bottom: 1.5rem; }
+.post-head h1 { margin-top: 0.25rem; }
+.back { margin-top: 2.5rem; }
+
+.site-foot {
+  padding-top: 1.5rem; padding-bottom: 3rem;
+  border-top: 2px dashed var(--trail);
+  font-size: 0.9rem; color: var(--loam-soft);
+}
+.site-foot p { margin: 0.25rem 0; }
+
+@media (max-width: 640px) {
+  .masthead { height: 420px; }
+  .is-inner .masthead { height: 120px; }
+  .is-inner .wordmark { font-size: 2.25rem; }
+}

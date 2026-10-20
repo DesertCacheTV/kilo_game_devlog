@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='9' y='2' width='14' height='28' rx='7' fill='%235D7A22'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/assets/css/kilo.css" | relative_url }}">
+  {% feed_meta %}
+</head>
+<body class="{% if page.layout == 'home' %}is-home{% else %}is-inner{% endif %}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    {% include garden.html %}
+    <div class="masthead-text">
+      <a class="wordmark" href="{{ "/" | relative_url }}">Kilo</a>
+      {% if page.layout == 'home' %}<p class="tagline">{{ site.tagline }}</p>{% endif %}
+    </div>
+  </header>
+  {% include nav.html %}
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-foot wrap">
+    <p>Notes from the garden, one checkpoint at a time. <a href="{{ "/feed.xml" | relative_url }}">Follow with RSS</a></p>
+  </footer>
+</body>
+</html>

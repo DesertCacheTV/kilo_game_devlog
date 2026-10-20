@@ -1,0 +1,23 @@
+title: "Kilo Devlog"
+tagline: "A devlog about a 10 cm hero and a pickle jar the size of a mountain."
+description: "Development blog for Kilo (working title): a 10 cm hero, a giant garden, and a pickle jar the size of a mountain."
+url: "https://DesertCacheTV.github.io"
+baseurl: "/kilo_game_devlog"
+plugins:
+  - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /:year/:month/:day/:title/
+header_pages:
+  - about.md
+  - how-kilo-is-made.md
+  - credits.md
+  - kickstarter.md
+feed:
+  path: feed.xml
+exclude:
+  - README.md
+  - publish_devlog.md
+  - setup_devlog.ps1
+  - _drafts
