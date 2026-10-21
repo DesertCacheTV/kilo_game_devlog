@@ -1,4 +1,4 @@
-/* Kilo devlog: a garden at dawn, seen from 10 cm up. */
+﻿/* Kilo devlog: a garden at dawn, seen from 10 cm up. */
 :root {
   --dew: #EEF2E3;
   --leaf-wash: #DEE6CB;
@@ -125,7 +125,8 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
 
 @media (max-width: 640px) {
   .masthead { height: 360px; }
-  .tagline { max-width: 13rem; }
+  .tagline { max-width: 10.5rem; font-size: 0.95rem; }
+  .is-home .garden { width: 125%; } /* nudges the jar right, clear of the tagline */
   .is-inner .masthead { height: 120px; }
   .is-inner .wordmark { font-size: 2.25rem; }
 }
@@ -147,7 +148,7 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
 .meta { margin: 0; font-size: 0.9rem; color: var(--loam-soft); }
 
 /* "Where Kilo is at": three lanes, like index cards pinned in the garden shed. */
-.board { margin-top: 2.5rem; }
+.board { margin-top: 1.5rem; }
 .board-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 1rem; }
 .board-head .section-title { margin-bottom: 0.5rem; }
 .board-date { margin: 0; font-size: 0.9rem; color: var(--loam-soft); }
@@ -161,9 +162,9 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
 .lane ul { margin: 0; padding: 0; list-style: none; }
 .lane li { position: relative; padding: 0.45rem 0 0.45rem 1.5rem; border-top: 1.5px dashed var(--leaf-wash); font-size: 0.98rem; line-height: 1.45; }
 .lane li::before { position: absolute; left: 0; top: 0.42rem; font-weight: 600; }
-.lane-playable li::before { content: "¹3"; color: var(--pickle); }
-.lane-building li::before { content: "92"; color: var(--trail); }
-.lane-cooking li::before { content: "6"; color: var(--loam-soft); }
+.lane-playable li::before { content: "\2713"; color: var(--pickle); }
+.lane-building li::before { content: "\2692"; color: var(--trail); }
+.lane-cooking li::before { content: "\2026"; color: var(--loam-soft); }
 .lane-building .sticker { background: #F3E9D2; }
 .lane-cooking .sticker { background: var(--leaf-wash); color: var(--ink); }
 
