@@ -1,0 +1,72 @@
+---
+layout: page
+title: Videos
+permalink: /videos/
+---
+<p class="intro">Little clips from a big garden. Pick a tag to narrow things down, or just scroll from the newest.</p>
+
+{% assign vids = site.data.videos.videos | sort: "date" | reverse %}
+{% if vids.size > 0 %}
+{% assign all_tags = "" | split: "" %}
+{% for v in vids %}{% for t in v.tags %}{% assign all_tags = all_tags | push: t %}{% endfor %}{% endfor %}
+{% assign all_tags = all_tags | uniq | sort %}
+<div class="tag-filter" role="group" aria-label="Filter videos by tag">
+  <button type="button" class="tag-btn" data-tag="" aria-pressed="true">All</button>
+  {%- for t in all_tags %}
+  <button type="button" class="tag-btn" data-tag="{{ t | slugify }}" aria-pressed="false">{{ t }}</button>
+  {%- endfor %}
+</div>
+<ol class="video-grid breakout">
+  {%- for v in vids %}
+  <li class="video-card" data-tags="{% for t in v.tags %}{{ t | slugify }} {% endfor %}">
+    <div class="video-frame">
+      <button type="button" class="video-play" data-id="{{ v.youtube }}" aria-label="Play video: {{ v.title | escape }}">
+        <img src="{% if v.thumb %}{{ v.thumb | relative_url }}{% else %}https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg{% endif %}" alt="" loading="lazy" decoding="async" width="480" height="270">
+        <span class="play-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="video-body">
+      <p class="meta"><time datetime="{{ v.date | date_to_xmlschema }}">{{ v.date | date: "%B %-d, %Y" }}</time>{% for t in v.tags %} <span class="chip">{{ t }}</span>{% endfor %}</p>
+      <h2 class="video-title">{{ v.title }}</h2>
+      {%- if v.description %}<p>{{ v.description }}</p>{% endif %}
+      {%- if v.post %}<p><a href="{{ v.post | relative_url }}">Read the devlog post</a></p>{% endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ol>
+<p class="no-match" hidden>No clips with that tag yet.</p>
+<script>
+(function () {
+  // Click-to-play: YouTube only loads after someone presses play.
+  document.querySelectorAll('.video-play').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(b.dataset.id) + '?autoplay=1&rel=0';
+      f.title = b.getAttribute('aria-label').replace('Play video: ', '');
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      b.replaceWith(f);
+    });
+  });
+  // Tag filter.
+  var btns = document.querySelectorAll('.tag-btn'), cards = document.querySelectorAll('.video-card'), none = document.querySelector('.no-match');
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var tag = b.dataset.tag, shown = 0;
+      btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      cards.forEach(function (c) {
+        var ok = !tag || (' ' + c.dataset.tags).indexOf(' ' + tag + ' ') > -1;
+        c.hidden = !ok; if (ok) shown++;
+      });
+      none.hidden = shown > 0;
+    });
+  });
+})();
+</script>
+{% else %}
+<div class="empty-note">
+  <p><span class="sticker">Coming soon</span></p>
+  <p>The first gameplay clips are being recorded. When they land, they'll show up here, newest first, with tags so you can find runs, biomes and devlog moments.</p>
+  <p>Until then, the <a href="{{ "/" | relative_url }}">trail log</a> has screenshots from every step.</p>
+</div>
+{% endif %}

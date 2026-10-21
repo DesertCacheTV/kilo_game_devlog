@@ -31,4 +31,6 @@ These are our **target specs**. They're goals we're building toward, not measure
 
 Right now the game doesn't hit these targets at every setting yet. Making it run smoothly on modest hardware is a big part of the work ahead, and we'll share how it's going here.
 
+{% include find-us.html %}
+
 *Kilo Man Jar-O is a working title. Everything shown is work in progress.*

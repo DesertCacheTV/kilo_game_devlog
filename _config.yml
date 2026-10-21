@@ -13,6 +13,7 @@ header_pages:
   - about.md
   - how-kilo-is-made.md
   - credits.md
+  - videos.html
   - kickstarter.md
 feed:
   path: feed.xml

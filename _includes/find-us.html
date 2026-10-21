@@ -1,0 +1,12 @@
+<section class="find-us" id="find-us" aria-labelledby="find-us-title">
+  <h2 id="find-us-title">Find us</h2>
+  <p>Kilo Man Jar-O is made by <strong>DesertCache</strong>. More places to follow along are on the way.</p>
+  <ul class="find-list">
+    {%- for l in site.data.social.links %}
+    <li>
+      {%- if l.url != "" %}<a href="{% if l.url contains '://' %}{{ l.url }}{% else %}{{ l.url | relative_url }}{% endif %}">{{ l.name }}</a>{% else %}<span class="find-name">{{ l.name }}</span> <span class="chip">coming soon</span>{% endif %}
+      <span class="find-note">{{ l.note }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>

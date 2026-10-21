@@ -1,0 +1,9 @@
+# "Find us" links on the About page. Leave url empty until the account is ready;
+# empty ones show as "coming soon". Use the DesertCache / DesertCacheTV name only.
+links:
+  - name: YouTube
+    note: Gameplay clips and devlog videos
+    url: ""
+  - name: RSS feed
+    note: Every new devlog post, in your reader
+    url: /feed.xml
