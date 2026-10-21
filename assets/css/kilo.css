@@ -64,7 +64,8 @@ a:hover { text-decoration-thickness: 2px; }
   text-decoration: none;
   letter-spacing: -0.02em;
 }
-.is-inner .wordmark { font-size: 2.25rem; }
+.is-inner .wordmark { font-size: 2.25rem; padding: 0.1em 0.5em 0.15em; background: rgba(251, 252, 246, 0.88);
+  border: 2px solid #2B2417; border-radius: 999px; transform: rotate(-1.5deg); } /* a sticker, so the name stays readable over the jar */
 .tagline {
   max-width: 24rem; margin: 0.75rem 0 0;
   font: 400 clamp(1rem, 2.2vw, 1.25rem)/1.4 var(--serif);
