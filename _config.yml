@@ -18,6 +18,8 @@ feed:
   path: feed.xml
 exclude:
   - README.md
+  - Gemfile
+  - Gemfile.lock
   - publish_devlog.md
   - setup_devlog.ps1
   - _drafts

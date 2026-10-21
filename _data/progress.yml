@@ -1,0 +1,26 @@
+# The "Where Kilo is at" board on the home page.
+# Update it with each devlog. Only things you've play-tested go under "playable".
+updated: 2026-10-20
+lanes:
+  - key: playable
+    title: Playable now
+    note: Built and play-tested
+    items:
+      - The tiny hero, with his own camera and movement
+      - The Backyard ant trail, with twigs, logs and vistas
+      - "The full run: countdown, finish at the jar, fall, retry"
+      - A morning sky with a big red barn
+  - key: building
+    title: On the workbench
+    note: Being built right now
+    items:
+      - Getting hurt, and the retry screen
+      - A performance pass for modest PCs
+  - key: cooking
+    title: Still cooking
+    note: Planned, not built yet
+    items:
+      - Underground tunnels lit by glowing mushrooms
+      - Something to run away from
+      - Rain, and a storm that rolls in mid-run
+      - Better faraway scenery

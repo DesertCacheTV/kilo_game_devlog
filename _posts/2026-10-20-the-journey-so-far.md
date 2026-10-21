@@ -6,6 +6,7 @@ tags: [devlog, origin]
 ---
 
 **TL;DR:** Kilo went from a blank project to a playable run (a tiny hero, an ant trail and a pickle jar at the finish) in under 15 hours.
+{: .tldr}
 
 Hi! Welcome to the first devlog for **Kilo** (working title).
 

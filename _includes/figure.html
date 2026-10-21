@@ -1,0 +1,11 @@
+{%- comment -%}
+Usage in a post:
+{% include figure.html src="/assets/img/hero-grass.webp" alt="What the image shows" caption="Optional caption" width="1280" height="720" %}
+Add wide=true to let an image run wider than the text.
+{%- endcomment -%}
+<figure class="shot{% if include.wide %} breakout{% endif %}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"{% if include.width %} width="{{ include.width }}" height="{{ include.height }}"{% endif %} loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>

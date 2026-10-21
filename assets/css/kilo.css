@@ -9,6 +9,9 @@
   --sun: #F2B33D;
   --barn: #9E3B2C;
   --measure: 40rem;
+  --wide: 58rem;
+  --card: #FBFCF6;
+  --ink: #2B2417;
   --serif: "Young Serif", Georgia, serif;
   --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -20,6 +23,8 @@
     --loam-soft: #AEB59B;
     --pickle: #B3CF73;
     --trail: #A88A5F;
+    --card: #1C2414;
+    --ink: #E4E9D4;
   }
 }
 
@@ -119,7 +124,77 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
 .site-foot p { margin: 0.25rem 0; }
 
 @media (max-width: 640px) {
-  .masthead { height: 420px; }
+  .masthead { height: 360px; }
+  .tagline { max-width: 10.5rem; font-size: 0.95rem; }
+  .is-home .garden { width: 125%; } /* nudges the jar right, clear of the tagline */
   .is-inner .masthead { height: 120px; }
   .is-inner .wordmark { font-size: 2.25rem; }
+}
+
+/* ---- Design pass: progress board, post meta, figures, quirk. ---- */
+
+/* Let a block run wider than the reading column on big screens. */
+.breakout { width: min(var(--wide), 100vw - 2rem); margin-left: 50%; transform: translateX(-50%); }
+
+/* A hand-drawn squiggle under section titles. */
+.section-title { display: inline-block; padding-bottom: 0.35rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 8'%3E%3Cpath d='M0 4 Q5 0 10 4 T20 4 T30 4 T40 4' fill='none' stroke='%23F2B33D' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x left bottom / 20px 6px; }
+
+/* Stickers and chips. */
+.sticker { display: inline-block; padding: 0.2rem 0.7rem; border: 2px solid var(--ink); border-radius: 999px;
+  background: var(--sun); color: #2B2417; font: 600 0.95rem/1.2 var(--sans); transform: rotate(-2deg); }
+.chip { display: inline-block; margin-left: 0.35rem; padding: 0 0.5rem; border: 1.5px solid var(--trail); border-radius: 999px;
+  font-size: 0.8rem; line-height: 1.5; color: var(--loam-soft); }
+.meta { margin: 0; font-size: 0.9rem; color: var(--loam-soft); }
+
+/* "Where Kilo is at": three lanes, like index cards pinned in the garden shed. */
+.board { margin-top: 1.5rem; }
+.board-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 1rem; }
+.board-head .section-title { margin-bottom: 0.5rem; }
+.board-date { margin: 0; font-size: 0.9rem; color: var(--loam-soft); }
+.lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.25rem; margin-top: 1rem; }
+.lane { background: var(--card); color: var(--ink); border: 2px solid var(--ink); border-radius: 10px;
+  padding: 1rem 1.1rem 0.6rem; box-shadow: 5px 5px 0 var(--trail); }
+.lane:nth-child(2) { transform: rotate(0.6deg); }
+.lane:nth-child(3) { transform: rotate(-0.5deg); }
+.lane h3 { margin: 0; }
+.lane-note { margin: 0.5rem 0 0.4rem; font-size: 0.85rem; color: var(--loam-soft); }
+.lane ul { margin: 0; padding: 0; list-style: none; }
+.lane li { position: relative; padding: 0.45rem 0 0.45rem 1.5rem; border-top: 1.5px dashed var(--leaf-wash); font-size: 0.98rem; line-height: 1.45; }
+.lane li::before { position: absolute; left: 0; top: 0.42rem; font-weight: 600; }
+.lane-playable li::before { content: "\2713"; color: var(--pickle); }
+.lane-building li::before { content: "\2692"; color: var(--trail); }
+.lane-cooking li::before { content: "\2026"; color: var(--loam-soft); }
+.lane-building .sticker { background: #F3E9D2; }
+.lane-cooking .sticker { background: var(--leaf-wash); color: var(--ink); }
+
+/* Trail log cards. */
+.trail-stop h3 { margin-top: 0.25rem; }
+.trail-thumb { display: block; margin-bottom: 0.6rem; }
+.trail-thumb img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 2px solid var(--ink); border-radius: 10px; }
+
+/* Easier reading inside posts. */
+.prose { font-size: 1.0625rem; }
+.prose h2 { padding-top: 0.25rem; }
+.prose strong { font-weight: 600; }
+.prose .tldr { padding: 0.9rem 1.1rem; border: 2px solid var(--ink); border-radius: 10px; background: var(--card);
+  box-shadow: 5px 5px 0 var(--sun); }
+.prose hr { border: 0; border-top: 2px dashed var(--trail); margin: 2.5rem 0; }
+
+/* Screenshots: framed like a polaroid, with a caption. */
+.shot { margin: 2rem 0; }
+.shot img { display: block; width: 100%; height: auto; margin: 0; border: 2px solid var(--ink); border-radius: 10px; background: var(--leaf-wash); }
+.shot figcaption { margin-top: 0.5rem; font-size: 0.9rem; color: var(--loam-soft); }
+.shot.breakout figcaption { max-width: var(--measure); margin-left: auto; margin-right: auto; padding: 0 1rem; }
+
+/* Older / newer post links. */
+.post-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; margin-top: 3rem; }
+.post-nav a { display: block; padding: 0.8rem 1rem; border: 2px solid var(--ink); border-radius: 10px; color: var(--ink); text-decoration: none; background: var(--card); }
+.post-nav a:hover { box-shadow: 4px 4px 0 var(--pickle); }
+.post-nav .next { text-align: right; }
+.post-nav span { display: block; font-size: 0.8rem; color: var(--loam-soft); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .lane, .post-nav a { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .lane:hover { transform: rotate(0deg) translateY(-2px); }
 }

@@ -2,13 +2,16 @@
 layout: default
 ---
 <div class="intro">{{ content }}</div>
-
+{% include progress.html %}
 <h2 class="section-title">Trail log</h2>
 {% if site.posts.size > 0 %}
 <ol class="trail" reversed>
   {%- for post in site.posts %}
   <li class="trail-stop">
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    {%- if post.image %}
+    <a class="trail-thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ post.image | relative_url }}" alt="" loading="lazy" decoding="async"></a>
+    {%- endif %}
+    {% include post-meta.html post=post %}
     <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
   </li>
