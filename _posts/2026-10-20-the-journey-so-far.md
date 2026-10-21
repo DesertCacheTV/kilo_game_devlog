@@ -7,14 +7,14 @@ image: /assets/img/kilo-backyard-trail.webp
 image_alt: "A stone trail between low-poly trees and grey boulders, leading toward a giant pickle jar."
 ---
 
-**TL;DR:** Kilo went from a blank project to a playable run (a tiny hero, an ant trail and a pickle jar at the finish) in under 15 hours.
+**TL;DR:** Kilo Man Jar-O went from a blank project to a playable run (a tiny hero, an ant trail and a pickle jar at the finish) in under 15 hours.
 {: .tldr}
 
-Hi! Welcome to the first devlog for **Kilo** (working title).
+Hi! Welcome to the first devlog for **Kilo Man Jar-O** (working title).
 
 ## The idea
 
-Kilo is about a tiny hero. He's 10 centimeters tall and weighs about a kilogram, and he runs through a giant garden toward a pickle jar the size of a mountain. Blades of grass tower like trees. Pebbles are boulders. A barn on the horizon is over a kilometer wide from where he stands. The goal is a game that feels calm and full of wonder, even while you're dodging flying pickles.
+Kilo Man Jar-O is about a tiny hero named Kilo Man. He's 10 centimeters tall and weighs about a kilogram, and he runs through a giant garden toward a pickle jar the size of a mountain. Blades of grass tower like trees. Pebbles are boulders. A barn on the horizon is over a kilometer wide from where he stands. The goal is a game that feels calm and full of wonder, even while you're dodging flying pickles.
 
 ## How it plays
 
@@ -22,7 +22,7 @@ You run, jump and climb your way along a winding trail. You read what's ahead an
 
 ## How it's being made
 
-This is a small project with an unusual crew. I'm the designer and play-tester, and I make the final call on everything. Alongside me are two AI helpers. One of them works directly inside Unreal Engine 5.8, building Blueprints, materials and level pieces. The other plans each step, checks the work, keeps the project's history safe, and measures performance. While I'm at my day job, it keeps working and pings my phone whenever it needs a human decision. (More on that in [How Kilo is made]({{ "/how-kilo-is-made/" | relative_url }}).)
+This is a small project with an unusual crew. I'm the designer and play-tester, and I make the final call on everything. Alongside me are two AI helpers. One of them works directly inside Unreal Engine 5.8, building Blueprints, materials and level pieces. The other plans each step, checks the work, keeps the project's history safe, and measures performance. While I'm at my day job, it keeps working and pings my phone whenever it needs a human decision. (More on that in [How it's made]({{ "/how-kilo-is-made/" | relative_url }}).)
 
 ## What we've built so far
 
@@ -49,7 +49,7 @@ These are quick captures from inside the editor, so they're rough around the edg
 
 ## Honest corner
 
-I'm building on a laptop with integrated graphics, on purpose. If Kilo runs well here, it should run well on most people's PCs. Right now it doesn't hit that bar yet at max settings, and a performance pass is on the list.
+I'm building on a laptop with integrated graphics, on purpose. If the game runs well here, it should run well on most people's PCs. Right now it doesn't hit that bar yet at max settings, and a performance pass is on the list.
 
 ## Next up
 
@@ -62,4 +62,4 @@ I'm building on a laptop with integrated graphics, on purpose. If Kilo runs well
 
 Thanks for following along. There's a lot more pickle to come.
 
-*Kilo is a working title. Everything shown is work in progress.*
+*Kilo Man Jar-O is a working title. Everything shown is work in progress.*
