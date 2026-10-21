@@ -27,3 +27,10 @@ go_public_log.txt
 go_public.ps1.bak2
 test_view.bat
 .git_old_*/
+retry_rules.ps1
+run_rules.bat
+rules_log.txt
+open_pr.ps1
+run_credits.bat
+pr_log.txt
+CLAUDE.md

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How the Trail Builds Itself"
-date: 2026-10-21 12:00:00
+date: 2026-10-21 09:00:00
 tags: [devlog, tech, level-design]
 ---
 **TL;DR:** Kilo Man's trail isn't built by hand. Each level is a little recipe, and the game snaps the trail together from a kit of pieces, building just ahead of you and tidying up behind.
