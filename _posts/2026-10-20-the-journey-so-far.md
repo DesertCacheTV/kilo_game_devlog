@@ -14,7 +14,7 @@ Hi! Welcome to the first devlog for **Kilo Man Jar-O** (working title).
 
 ## The idea
 
-Kilo Man Jar-O is about a tiny hero named Kilo. He's 10 centimeters tall and weighs about a kilogram, and he runs through a giant garden toward a pickle jar the size of a mountain. Blades of grass tower like trees. Pebbles are boulders. A barn on the horizon is over a kilometer wide from where he stands. The goal is a game that feels calm and full of wonder, even while you're dodging flying pickles.
+Kilo Man Jar-O is about a tiny hero named Kilo Man. He's 10 centimeters tall and weighs about a kilogram, and he runs through a giant garden toward a pickle jar the size of a mountain. Blades of grass tower like trees. Pebbles are boulders. A barn on the horizon is over a kilometer wide from where he stands. The goal is a game that feels calm and full of wonder, even while you're dodging flying pickles.
 
 ## How it plays
 
