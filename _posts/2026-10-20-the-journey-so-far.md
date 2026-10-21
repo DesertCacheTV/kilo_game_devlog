@@ -3,6 +3,8 @@ layout: post
 title: "A 10 cm Hero, a Mountain of Pickles, and 15 Hours of Building"
 date: 2026-10-20
 tags: [devlog, origin]
+image: /assets/img/kilo-backyard-trail.webp
+image_alt: "A stone trail between low-poly trees and grey boulders, leading toward a giant pickle jar."
 ---
 
 **TL;DR:** Kilo went from a blank project to a playable run (a tiny hero, an ant trail and a pickle jar at the finish) in under 15 hours.
@@ -32,6 +34,18 @@ All of this happened in under 15 hours, starting from a blank project:
 - **The full run loop.** Countdown, distance counter, finishing at the jar, failing by falling off, a results screen, and a near-instant retry.
 - **A morning sky.** A low golden sun, drifting clouds, softened fog, and a big red barn in the distance.
 - **Safety nets.** Every change is saved as a checkpoint, so if something breaks, we roll back instead of patching on top of a mess.
+
+## From the workbench
+
+These are quick captures from inside the editor, so they're rough around the edges. They show how the garden grew.
+
+{% include figure.html src="/assets/img/kilo-first-trail-blockout.webp" width="512" height="241" alt="An early editor view of a long, pale green trail lined with simple cone-shaped trees and grey rocks, stretching toward the horizon over flat blue ground." caption="September 27: one of the very first trail tests. Cone trees and grey pebbles stand in for the garden." %}
+
+{% include figure.html src="/assets/img/kilo-jar-early-test.webp" width="640" height="489" alt="A glass jar with a yellow lid and pale pickles inside, sitting among rolling hills under a bright purple sky, with the editor's move arrows over it." caption="October 14: trying out the pickle jar on a rough landscape. The colors were nowhere near final." %}
+
+{% include figure.html src="/assets/img/kilo-backyard-trail.webp" width="640" height="307" alt="A stone-paved trail between low-poly green trees and big grey boulders, leading toward a giant pickle jar with a yellow lid, with sandy hills behind." caption="October 19: the Backyard trail, heading for the jar. The thin green box around the jar is just the editor showing it's selected." %}
+
+{% include figure.html src="/assets/img/kilo-barn.webp" width="720" height="346" alt="A red wooden barn with a pale curved roof, a small window and an open doorway, among golden hills under a soft sky." caption="October 19: the big red barn up close. In the game, it sits far away on the horizon." %}
 
 ## Honest corner
 
