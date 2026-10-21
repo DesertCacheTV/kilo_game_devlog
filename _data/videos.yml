@@ -1,0 +1,12 @@
+# Videos page list. Newest first is automatic (sorted by date).
+# To add a clip: upload it to YouTube (unlisted is fine), then copy this block
+# to the bottom of the list and fill it in. Only "youtube", "title" and "date" are required.
+#
+# - youtube: AbCdEfGhIjK          # the ID from the link: youtube.com/watch?v=AbCdEfGhIjK
+#   title: "First run through the ant trail"
+#   date: 2026-10-21
+#   description: "A full run from the start line to the jar. Placeholder sounds."
+#   tags: [Backyard, Run, "Devlog #2"]
+#   thumb: /assets/img/my-thumbnail.webp   # optional; otherwise YouTube's own thumbnail is used
+#   post: /2026/10/20/pickles-now-hurt/    # optional; links the clip to its devlog post
+videos: []
