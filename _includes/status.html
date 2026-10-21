@@ -1,0 +1,2 @@
+{%- assign k = include.s | downcase | replace: " ", "-" -%}
+<span class="status status-{{ k }}">{{ include.s }}</span>

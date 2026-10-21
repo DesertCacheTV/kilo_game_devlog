@@ -25,3 +25,12 @@ lanes:
       - Something to run away from (replacing the flying pickles)
       - Rain, and a storm that rolls in mid-run
       - Better faraway scenery
+  - key: paused
+    title: Back burner
+    note: Tried, then paused or removed
+    link: /back-burner/
+    link_text: What we tried, and what we learned
+    items:
+      - Flying pickles (too small and fast to dodge)
+      - A storm that rolls in mid-run (didn't show up on screen)
+      - A puddle that splashes you back

@@ -11,6 +11,7 @@ kramdown:
 permalink: /:year/:month/:day/:title/
 header_pages:
   - about.md
+  - kilo-man.md
   - how-kilo-is-made.md
   - credits.md
   - videos.html

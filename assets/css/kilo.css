@@ -227,3 +227,33 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
 .find-list li { padding: 0.5rem 0; border-top: 1.5px dashed var(--leaf-wash); }
 .find-name { font-weight: 600; }
 .find-note { display: block; font-size: 0.9rem; color: var(--loam-soft); }
+
+/* ---- Status labels (Working / In progress / Planned / Back burner / Removed) ---- */
+.status { display: inline-block; padding: 0.05rem 0.6rem; border: 2px solid #2B2417; border-radius: 999px;
+  font: 600 0.8rem/1.5 var(--sans); color: #2B2417; white-space: nowrap; vertical-align: 0.15em; }
+.status-working { background: #B3CF73; }
+.status-in-progress { background: #F3E9D2; }
+.status-planned { background: #DEE6CB; }
+.status-back-burner { background: #F2B33D; }
+.status-removed { background: #E3B5A9; }
+.status-replaced { background: #C9DDE6; }
+.status-fixed { background: #CFE7C2; }
+.lane-paused li::before { content: "\23F8"; color: var(--sun); }
+.lane-paused .sticker { background: #E3B5A9; }
+.lane-link { margin: 0.6rem 0 0.4rem; font-size: 0.9rem; }
+.board-help { margin: 1rem 0 0; font-size: 0.9rem; color: var(--loam-soft); }
+
+/* Story cards on the Back burner and Kilo Man pages. */
+.story { margin: 1.5rem 0; padding: 1rem 1.1rem 0.4rem; background: var(--card); color: var(--ink); border: 2px solid var(--ink); border-radius: 10px; box-shadow: 5px 5px 0 var(--trail); }
+.story h3 { margin: 0 0 0.5rem; font-size: 1.25rem; }
+.story dl { margin: 0; }
+.story dt { font-weight: 600; font-size: 0.9rem; color: var(--loam-soft); margin-top: 0.4rem; }
+.story dd { margin: 0 0 0.5rem; }
+.steps { counter-reset: step; list-style: none; padding: 0; }
+.steps > li { counter-increment: step; position: relative; padding: 0 0 1rem 2.75rem; }
+.steps > li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; border-radius: 50%;
+  border: 2px solid var(--ink); background: var(--card); color: var(--ink); font: 400 1rem/1.8 var(--serif); text-align: center; }
+.steps h3 { margin: 0.1rem 0 0.3rem; font-size: 1.15rem; }
+.steps p { margin: 0 0 0.4rem; }
+.glossary dt { font-family: var(--serif); font-size: 1.15rem; margin-top: 1.1rem; }
+.glossary dd { margin: 0.2rem 0 0; }
