@@ -14,4 +14,21 @@ At its heart, it's a game about one simple idea: it doesn't matter how small you
 
 The goal is a game that feels calm, cozy and full of wonder, even when the garden gets a little wild.
 
+## Will it run on my PC?
+
+A small hero deserves a game that runs on small computers too. Kilo Man Jar-O is being built on a laptop with integrated graphics, on purpose, so it stays friendly to modest PCs. It's planned for **Windows, on Steam**.
+
+These are our **target specs**. They're goals we're building toward, not measured results yet. We'll update them once the game has been properly tested on real machines.
+
+**Minimum (aiming for a steady 30 fps on Low settings)**
+- Processor: 4 cores / 8 threads
+- Memory: 8 GB RAM
+- Graphics: GTX 1050 Ti or RX 570, or a recent integrated GPU
+
+**Recommended (aiming for 60 fps at 1080p on Medium settings)**
+- Graphics: GTX 1660 class
+- Memory: 16 GB RAM
+
+Right now the game doesn't hit these targets at every setting yet. Making it run smoothly on modest hardware is a big part of the work ahead, and we'll share how it's going here.
+
 *Kilo Man Jar-O is a working title. Everything shown is work in progress.*
