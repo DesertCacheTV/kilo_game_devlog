@@ -10,17 +10,18 @@ lanes:
       - The Backyard ant trail, with twigs, logs and vistas
       - "The full run: countdown, finish at the jar, fall, retry"
       - A morning sky with a big red barn
+      - "Getting hurt: 3 HP, hit sounds, and a quick retry"
   - key: building
     title: On the workbench
     note: Being built right now
     items:
-      - Getting hurt, and the retry screen
+      - An 8 km background landscape of hills and mountains
       - A performance pass for modest PCs
   - key: cooking
     title: Still cooking
     note: Planned, not built yet
     items:
       - Underground tunnels lit by glowing mushrooms
-      - Something to run away from
+      - Something to run away from (replacing the flying pickles)
       - Rain, and a storm that rolls in mid-run
       - Better faraway scenery
