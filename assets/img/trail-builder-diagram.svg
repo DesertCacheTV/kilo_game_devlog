@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="1200" height="380" rx="18" fill="#EEF2E3"/>
+  <!-- behind: already cleared -->
+  <g opacity="0.35">
+    <rect x="40" y="170" width="120" height="60" rx="10" fill="#C9B48A" stroke="#2B2417" stroke-width="2" stroke-dasharray="6 5"/>
+    <rect x="166" y="170" width="120" height="60" rx="10" fill="#C9B48A" stroke="#2B2417" stroke-width="2" stroke-dasharray="6 5"/>
+  </g>
+  <!-- built pieces -->
+  <rect x="292" y="170" width="120" height="60" rx="10" fill="#C9B48A" stroke="#2B2417" stroke-width="2"/>
+  <rect x="418" y="170" width="120" height="60" rx="10" fill="#B3CF73" stroke="#2B2417" stroke-width="2"/>
+  <rect x="544" y="170" width="120" height="60" rx="10" fill="#C9B48A" stroke="#2B2417" stroke-width="2"/>
+  <rect x="670" y="170" width="120" height="60" rx="10" fill="#9EC1CF" stroke="#2B2417" stroke-width="2"/>
+  <rect x="796" y="170" width="120" height="60" rx="10" fill="#F2B33D" stroke="#2B2417" stroke-width="2"/>
+  <rect x="922" y="170" width="120" height="60" rx="10" fill="#C9B48A" stroke="#2B2417" stroke-width="2"/>
+  <!-- not built yet -->
+  <rect x="1048" y="170" width="112" height="60" rx="10" fill="none" stroke="#2B2417" stroke-width="2" stroke-dasharray="6 5" opacity="0.45"/>
+  <g font-size="19" font-weight="600" fill="#2B2417" text-anchor="middle">
+    <text x="100" y="207" opacity="0.4">Straight</text>
+    <text x="226" y="207" opacity="0.4">Twigs</text>
+    <text x="352" y="207">Straight</text>
+    <text x="478" y="207">Twigs</text>
+    <text x="604" y="207">Straight</text>
+    <text x="730" y="207">Bridge</text>
+    <text x="856" y="207">Vista</text>
+    <text x="982" y="207">Straight</text>
+    <text x="1104" y="207" opacity="0.5">next…</text>
+  </g>
+  <!-- the hero -->
+  <g transform="translate(470 138)" stroke="#2B2417" stroke-width="3" stroke-linecap="round" fill="none">
+    <circle cx="0" cy="-18" r="6" fill="#2B2417"/>
+    <path d="M0 -12 V2 M0 -8 L-7 -2 M0 -8 L8 -4 M0 2 L-6 14 M0 2 L7 14"/>
+  </g>
+  <text x="470" y="110" font-size="18" font-weight="600" fill="#2B2417" text-anchor="middle">Kilo Man</text>
+  <!-- brackets -->
+  <g stroke="#5A503C" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M478 262 V276 H1040 V262"/>
+    <path d="M40 262 V276 H286 V262"/>
+  </g>
+  <g font-size="20" fill="#2B2417" text-anchor="middle">
+    <text x="759" y="306"><tspan font-weight="600">Built about 72 m ahead</tspan></text>
+    <text x="759" y="332" fill="#5A503C">snapped together end to end, from the level's recipe</text>
+    <text x="40" y="306" text-anchor="start"><tspan font-weight="600">Cleared 36 m behind</tspan></text>
+    <text x="40" y="332" fill="#5A503C" text-anchor="start">so only nearby pieces exist</text>
+  </g>
+  <text x="40" y="60" font-size="26" font-weight="700" fill="#2B2417">How the trail builds itself</text>
+  <text x="40" y="92" font-size="19" fill="#5A503C">Same seed, same trail, every run. The builder checks five times a second.</text>
+</svg>
