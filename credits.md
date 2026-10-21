@@ -4,7 +4,7 @@ title: Credits
 permalink: /credits/
 ---
 
-Kilo is built with help from these tools and assets. Thank you!
+Kilo Man Jar-O is built with help from these tools and assets. Thank you!
 
 - **Unreal Engine** by Epic Games
 - **Manny and Quinn mannequins** by Epic Games, standing in for the hero until Kilo gets his own model

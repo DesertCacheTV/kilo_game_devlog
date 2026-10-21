@@ -1,10 +1,10 @@
 ---
 layout: page
-title: How Kilo is made
+title: How it's made
 permalink: /how-kilo-is-made/
 ---
 
-Kilo is openly built with AI help, and that's part of the story.
+Kilo Man Jar-O is openly built with AI help, and that's part of the story.
 
 - **One designer.** I design and play-test the game, and I make the final call on everything.
 - **Two AI helpers.** One works directly inside Unreal Engine, building Blueprints, materials and level pieces. The other plans each step, checks the work, keeps the project's history safe, and measures performance.

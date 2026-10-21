@@ -59,14 +59,14 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .wordmark {
   display: inline-block;
-  font: 400 clamp(3.5rem, 11vw, 7.5rem)/0.9 var(--serif);
+  font: 400 clamp(2.4rem, 8.5vw, 5.75rem)/0.95 var(--serif);
   color: #2B2417;
   text-decoration: none;
   letter-spacing: -0.02em;
 }
-.is-inner .wordmark { font-size: 2.75rem; }
+.is-inner .wordmark { font-size: 2.25rem; }
 .tagline {
-  max-width: 22rem; margin: 0.75rem 0 0;
+  max-width: 24rem; margin: 0.75rem 0 0;
   font: 400 clamp(1rem, 2.2vw, 1.25rem)/1.4 var(--serif);
   color: #3B321F;
 }
@@ -128,7 +128,7 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
   .tagline { max-width: 10.5rem; font-size: 0.95rem; }
   .is-home .garden { width: 125%; } /* nudges the jar right, clear of the tagline */
   .is-inner .masthead { height: 120px; }
-  .is-inner .wordmark { font-size: 2.25rem; }
+  .is-inner .wordmark { font-size: 1.6rem; }
 }
 
 /* ---- Design pass: progress board, post meta, figures, quirk. ---- */
@@ -198,3 +198,4 @@ h1 { font-size: clamp(2rem, 6vw, 2.75rem); margin: 0 0 1.25rem; }
   .lane, .post-nav a { transition: transform 0.15s ease, box-shadow 0.15s ease; }
   .lane:hover { transform: rotate(0deg) translateY(-2px); }
 }
+.nowrap { white-space: nowrap; }

@@ -50,4 +50,4 @@ To keep it light on modest PCs, the landscape doesn't use any texture images. It
 
 Thanks for following along. Mind the pickles.
 
-*Kilo is a working title. Everything shown is work in progress.*
+*Kilo Man Jar-O is a working title. Everything shown is work in progress.*

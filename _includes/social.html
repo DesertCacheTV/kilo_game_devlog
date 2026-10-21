@@ -2,7 +2,7 @@
 {%- if page.excerpt -%}{%- assign meta_desc = page.excerpt | strip_html | strip_newlines | truncate: 160 -%}{%- else -%}{%- assign meta_desc = site.description -%}{%- endif -%}
 {%- if page.title and page.url != "/" -%}{%- assign meta_title = page.title -%}{%- else -%}{%- assign meta_title = site.title -%}{%- endif -%}
 {%- assign meta_image = page.image | default: "/assets/img/social-card.png" -%}
-{%- assign meta_image_alt = page.image_alt | default: "The Kilo garden: a tiny 10 cm hero on a dirt trail in front of a pickle jar the size of a mountain." -%}
+{%- assign meta_image_alt = page.image_alt | default: "The Kilo Man Jar-O garden: a tiny 10 cm hero on a dirt trail in front of a pickle jar the size of a mountain." -%}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{{ meta_title | escape }}">
