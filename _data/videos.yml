@@ -9,16 +9,4 @@
 #   tags: [Backyard, Run, "Devlog #2"]
 #   thumb: /assets/img/my-thumbnail.webp   # optional; otherwise YouTube's own thumbnail is used
 #   post: /2026/10/20/pickles-now-hurt/    # optional; links the clip to its devlog post
-videos:
-  - youtube: TESTVIDEO01
-    title: "TEST clip one"
-    date: 2026-10-20
-    description: "Test entry, removed before merge."
-    tags: [Backyard, "Devlog #2"]
-    thumb: /assets/img/kilo-hp-tall-grass.webp
-  - youtube: TESTVIDEO02
-    title: "TEST clip two"
-    date: 2026-10-21
-    description: "Test entry, removed before merge."
-    tags: [Backyard, Trail]
-    post: /2026/10/21/how-the-trail-builds-itself/
+videos: []
