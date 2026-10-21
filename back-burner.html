@@ -1,0 +1,96 @@
+---
+layout: page
+title: Back burner
+permalink: /back-burner/
+---
+<p class="intro">Not every idea works the first time, and that's part of the fun. This is where the paused, replaced and removed bits of Kilo Man Jar-O live. Each one has what it was, what happened, and what we learned.</p>
+
+<p>The labels: {% include status.html s="Back burner" %} paused, might come back. {% include status.html s="Replaced" %} swapped for something better. {% include status.html s="Removed" %} taken out. {% include status.html s="Fixed" %} a little oops we caught. New words? Try the <a href="{{ "/glossary/" | relative_url }}">glossary</a>.</p>
+
+<h2>Paused for now</h2>
+
+<div class="story">
+  <h3>Flying pickles {% include status.html s="Back burner" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>Little pickle cannons along the run that fired pickles at Kilo Man. Each hit cost 1 HP.</dd>
+    <dt>What happened</dt><dd>In play-testing, the pickles were too small and too fast to see coming. Getting hit felt random, not fair. The cannons are switched off, not deleted.</dd>
+    <dt>What we learned</dt><dd>A danger should be something you can spot and react to. A new hazard, something you can see coming and outrun, is planned instead.</dd>
+  </dl>
+</div>
+
+<div class="story">
+  <h3>The storm that rolls in {% include status.html s="Back burner" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>A storm that slowly darkens the sky and the fog as you run, so the mood changes partway through a level.</dd>
+    <dt>What happened</dt><dd>Behind the scenes, the numbers that control the sky really did change. But in a real play-test, after running 600 m, the screen looked exactly the same: no darkening, no storm clouds. So it went on the back burner.</dd>
+    <dt>What we learned</dt><dd>"The computer says it works" isn't the same as "you can see it working". Around here, nothing counts as working until it's been played.</dd>
+  </dl>
+</div>
+
+<div class="story">
+  <h3>The splashy puddle {% include status.html s="Back burner" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>A drop of water on the ant trail (a puddle, at Kilo Man's size) with a few pebbles. Stepping in it slowed you down and pushed you back for about a second.</dd>
+    <dt>What happened</dt><dd>It was taken out of the trail's mix of pieces and set aside in its own back-burner folder. The full reason is still to be written up.</dd>
+    <dt>What we learned</dt><dd>Setting a piece aside is cheap. It's all still there, ready to come back when the time is right.</dd>
+  </dl>
+</div>
+
+<h2>Replaced with something better</h2>
+
+<div class="story">
+  <h3>The first trail spawner {% include status.html s="Replaced" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>The very first system that laid track in front of you, one tile after another.</dd>
+    <dt>What happened</dt><dd>After a long run and a retry, it could leave the start of the trail empty. The new <a href="{{ "/2026/10/21/how-the-trail-builds-itself/" | relative_url }}">trail builder</a> replaced it, and it rebuilds the start properly on every retry.</dd>
+    <dt>What we learned</dt><dd>Planning the whole level as a recipe up front made retries simpler and more reliable.</dd>
+  </dl>
+</div>
+
+<div class="story">
+  <h3>The first sky {% include status.html s="Replaced" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>The original sky setup, with its own clouds and a moon.</dd>
+    <dt>What happened</dt><dd>A second, better sky took over. The old one is parked and hidden, not deleted, in case we need anything from it.</dd>
+    <dt>What we learned</dt><dd>Keep the old version around until the new one has proven itself.</dd>
+  </dl>
+</div>
+
+<h2>Small oops, caught and fixed</h2>
+
+<div class="story">
+  <h3>Softer cloud edges {% include status.html s="Removed" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>An experiment to fade the edges of the clouds so they'd look softer.</dd>
+    <dt>What happened</dt><dd>It made the clouds disappear completely. We rolled it straight back to the version that worked.</dd>
+    <dt>What we learned</dt><dd>Save a checkpoint before every experiment, so a bad one only costs a minute.</dd>
+  </dl>
+</div>
+
+<div class="story">
+  <h3>The tilted camera {% include status.html s="Fixed" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>After pressing Retry, the camera came back slightly tilted, like the world was on a slope.</dd>
+    <dt>What happened</dt><dd>The start marker had a tiny tilt hidden in it, and Retry copied it. Now Retry only copies which way you're facing, so the view matches a fresh start.</dd>
+    <dt>What we learned</dt><dd>Little numbers hide in little places. Test the second run too, not just the first.</dd>
+  </dl>
+</div>
+
+<div class="story">
+  <h3>Rock scatter {% include status.html s="Removed" %}</h3>
+  <dl>
+    <dt>What it was</dt><dd>An automatic sprinkle of rocks along the early path pieces.</dd>
+    <dt>What happened</dt><dd>It was taken out during a tidy-up of the path pieces. The game played fine without it.</dd>
+    <dt>What we learned</dt><dd>Less clutter, fewer things to break. Hand-picked set dressing can come back later.</dd>
+  </dl>
+</div>
+
+<h2>A rule we're keeping: drag-and-drop weather</h2>
+<p>Weather in Kilo Man Jar-O isn't painted into the sky. Each kind of weather is its own piece you can drop into any level, like a sticker on a map. That way any level can be sunny, cloudy, stormy or (one day) rainy without being rebuilt.</p>
+<ul>
+  <li>Drifting clouds {% include status.html s="Working" %}</li>
+  <li>A storm that rolls in {% include status.html s="Back burner" %}</li>
+  <li>Rain {% include status.html s="Planned" %}</li>
+</ul>
+
+<p><em>Kilo Man Jar-O is a working title. Everything shown is work in progress.</em></p>

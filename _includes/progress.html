@@ -13,7 +13,11 @@
         <li>{{ item }}</li>
         {%- endfor %}
       </ul>
+      {%- if lane.link %}
+      <p class="lane-link"><a href="{{ lane.link | relative_url }}">{{ lane.link_text | default: "Read more" }}</a></p>
+      {%- endif %}
     </div>
     {%- endfor %}
   </div>
+  <p class="board-help">New to game-making words? The <a href="{{ "/glossary/" | relative_url }}">little glossary</a> explains them.</p>
 </section>
