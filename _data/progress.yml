@@ -1,6 +1,6 @@
 # The "How the journey is going" board on the home page.
 # Update it with each devlog. Only things you've play-tested go under "playable".
-updated: 2026-10-21
+updated: 2026-10-22
 lanes:
   - key: playable
     title: Playable now
@@ -18,7 +18,7 @@ lanes:
     items:
       - An 8 km background landscape of hills and mountains
       - A performance pass for modest PCs
-      - A flower patch you can grow with a slider
+      - A flower patch you can grow with a slider (now showing beside the trail)
   - key: cooking
     title: Still cooking
     note: Planned, not built yet
