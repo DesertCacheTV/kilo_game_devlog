@@ -19,7 +19,7 @@ Then we dug through our own change history and found it. When we added the hills
 
 We put the real sky back. Blue, with soft clouds. Much better.
 
-{% include figure.html src="/assets/img/kilo-sky-fixed.jpg" alt="A big red barn and a pickle jar under a blue sky with soft white clouds, seen through tree branches." caption="The right sky, back where it belongs." width="1251" height="770" %}
+{% include figure.html src="/assets/img/kilo-sky-fixed.jpg" alt="A big red barn and a pickle jar under a blue sky with soft white clouds, seen through tree branches." caption="The right sky, back where it belongs." width="1251" height="670" %}
 
 ## Warmer light, clearer air {% include status.html s="Working" %}
 
@@ -27,7 +27,7 @@ We made the sun a little warmer, like early morning light. We also thinned the f
 
 I ran through it myself. It looks much more real. Everything feels like a morning in a giant garden.
 
-{% include figure.html src="/assets/img/kilo-track-clear-air.jpg" alt="A long view down the dirt trail toward a pickle jar in front of a red barn, in warm light." caption="Down the trail. Warmer sun, thinner fog." width="1251" height="770" %}
+{% include figure.html src="/assets/img/kilo-track-clear-air.jpg" alt="A pickle jar in front of red barn doors in warm light, seen from ground level." caption="The jar from ground level. Warmer sun, thinner fog." width="1251" height="670" %}
 
 ## The faraway hills were squashed {% include status.html s="In progress" %}
 
@@ -35,9 +35,9 @@ The hills and mountains behind the trail had been squashed to a quarter of the s
 
 We set the hills back to their full size. It's a big change. The world finally looks like a giant place, seen from a very small hero.
 
-{% include figure.html src="/assets/img/kilo-terrain-too-small.jpg" alt="A small island of hills under a tan sky, seen from far above." caption="Before: a small island under a brown sky." width="1251" height="770" %}
+{% include figure.html src="/assets/img/kilo-terrain-too-small.jpg" alt="A small island of hills under a tan sky, seen from far above." caption="Before: a small island under a brown sky." width="1251" height="670" %}
 
-{% include figure.html src="/assets/img/kilo-terrain-full-size.jpg" alt="A wide bowl of hills and mountains with the barn and big trees in the middle." caption="After: a wide bowl of hills, with the barn in the middle." width="1251" height="770" %}
+{% include figure.html src="/assets/img/kilo-terrain-full-size.jpg" alt="A wide bowl of hills and mountains with the barn and big trees in the middle." caption="After: a wide bowl of hills, with the barn in the middle. (Seen from way up, outside the sky.)" width="1251" height="670" %}
 
 ## Blooper of the day
 
