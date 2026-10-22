@@ -21,11 +21,17 @@ We put the real sky back. Blue, with soft clouds. Much better.
 
 {% include figure.html src="/assets/img/kilo-sky-fixed.jpg" alt="A big red barn and a pickle jar under a blue sky with soft white clouds, seen through tree branches." caption="The right sky, back where it belongs." width="1251" height="670" %}
 
+{% include figure.html src="/assets/img/kilo-start-line-hat.jpg" alt="The start line under a giant straw hat, with rocks and leafy plants around it, in morning light." caption="The start line, under a giant straw hat." width="1251" height="295" %}
+
 ## Warmer light, clearer air {% include status.html s="Working" %}
 
 We made the sun a little warmer, like early morning light. We also thinned the fog, so you can see the jar and the barn from far down the trail.
 
 I ran through it myself. It looks much more real. Everything feels like a morning in a giant garden.
+
+{% include figure.html src="/assets/img/kilo-barn-light-before.jpg" alt="The red barn under a blue sky, framed by leaves, in cooler light." caption="Before: cooler light, thicker fog." width="1251" height="570" %}
+
+{% include figure.html src="/assets/img/kilo-barn-light-after.jpg" alt="The same view of the red barn, now in warmer, clearer morning light." caption="After: warmer sun, thinner fog." width="1251" height="570" %}
 
 {% include figure.html src="/assets/img/kilo-track-clear-air.jpg" alt="A pickle jar in front of red barn doors in warm light, seen from ground level." caption="The jar from ground level. Warmer sun, thinner fog." width="1251" height="670" %}
 
@@ -38,6 +44,16 @@ We set the hills back to their full size. It's a big change. The world finally l
 {% include figure.html src="/assets/img/kilo-terrain-too-small.jpg" alt="A small island of hills under a tan sky, seen from far above." caption="Before: a small island under a brown sky." width="1251" height="670" %}
 
 {% include figure.html src="/assets/img/kilo-terrain-full-size.jpg" alt="A wide bowl of hills and mountains with the barn and big trees in the middle." caption="After: a wide bowl of hills, with the barn in the middle. (Seen from way up, outside the sky.)" width="1251" height="670" %}
+
+## Out on the trail
+
+Here's what a run looks like now, from Kilo Man's height. Grass blades are as tall as trees, and the flowers lean over the trail like umbrellas.
+
+{% include figure.html src="/assets/img/kilo-run-grass-45m.jpg" alt="Kilo Man on a stone trail beside tall grass, pink flowers and a giant wheelbarrow, 45 metres into a run." caption="45 metres in. The wheelbarrow is a building." width="1251" height="769" %}
+
+{% include figure.html src="/assets/img/kilo-run-flowers-47m.jpg" alt="Kilo Man on the trail with a wall of tall grass and pink flowers to his right and a wooden fence behind them." caption="Flowers taller than he is." width="1251" height="678" %}
+
+{% include figure.html src="/assets/img/kilo-run-tall-grass-60m.jpg" alt="Looking up past Kilo Man at giant grass blades and huge pink petals against a blue sky, 60 metres in." caption="60 metres in, and the grass closes in overhead." width="1251" height="769" %}
 
 ## Blooper of the day
 
@@ -52,6 +68,8 @@ It's a rare look at how the trail is built a few pieces at a time. We think he f
 We're making a flower patch that grows as you drag a slider. More slider, more flowers. We want to scatter them in the faraway background.
 
 It works in the editor. But when we stretch it, the flowers float in the air or vanish. So that's the bug we're chasing next.
+
+{% include figure.html src="/assets/img/kilo-flowers-floating.jpg" alt="Pink flowers and grass stalks hanging in mid-air above a flat yellow ground, with the barn behind them." caption="The bug: flowers hanging in the air instead of sitting on the ground." width="1251" height="600" %}
 
 ## Still cooking
 
