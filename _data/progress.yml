@@ -1,6 +1,6 @@
 # The "How the journey is going" board on the home page.
 # Update it with each devlog. Only things you've play-tested go under "playable".
-updated: 2026-10-22
+updated: 2026-10-21
 lanes:
   - key: playable
     title: Playable now
