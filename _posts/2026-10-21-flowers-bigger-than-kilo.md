@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flowers Bigger Than Kilo"
-date: 2026-10-22 09:00:00
+date: 2026-10-21 23:45:00
 tags: [devlog, flowers, scale]
 image: /assets/img/kilo-flowers-run-45m.jpg
 image_alt: "A small grey hero standing on a stone trail beside tall pink and cream flowers, with a giant wheelbarrow and a red barn behind them."
