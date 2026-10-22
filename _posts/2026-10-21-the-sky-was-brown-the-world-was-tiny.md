@@ -71,6 +71,14 @@ It works in the editor. But when we stretch it, the flowers float in the air or 
 
 {% include figure.html src="/assets/img/kilo-flowers-floating.jpg" alt="Pink flowers and grass stalks hanging in mid-air above a flat yellow ground, with the barn behind them." caption="The bug: flowers hanging in the air instead of sitting on the ground." width="1251" height="600" %}
 
+A peek behind the scenes. Here's the patch seen from straight above in the editor, with the arrows we use to move things around:
+
+{% include figure.html src="/assets/img/kilo-flowers-from-above.jpg" alt="A cluster of pink flowers and grass seen from straight above, with the editor's red, green and blue move arrows in the middle." caption="Behind the scenes: the flower patch from above, move arrows and all." width="1251" height="770" %}
+
+And here's the same spot after we moved the patch a long way down. The flowers didn't follow the ground. They went underneath it, so from above there's nothing but dirt:
+
+{% include figure.html src="/assets/img/kilo-flowers-gone.jpg" alt="An empty, flat yellow-brown ground seen from above, with no flowers anywhere." caption="Where did the flowers go? Under the ground." width="1251" height="670" %}
+
 ## Still cooking
 
 - **A rounder, earthier trail.** The path pieces should feel like a dug-out dirt groove, with a rounded half-pipe shape.
