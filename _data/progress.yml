@@ -1,6 +1,6 @@
 # The "How the journey is going" board on the home page.
 # Update it with each devlog. Only things you've play-tested go under "playable".
-updated: 2026-10-20
+updated: 2026-10-21
 lanes:
   - key: playable
     title: Playable now
@@ -10,6 +10,7 @@ lanes:
       - The Backyard ant trail, with twigs, logs and vistas
       - "The full run: countdown, finish at the jar, fall, retry"
       - A morning sky with a big red barn
+      - Warmer morning light, a blue sky and thinner fog
       - "Getting hurt: 3 HP, hit sounds, and a quick retry"
   - key: building
     title: On the workbench
@@ -17,6 +18,7 @@ lanes:
     items:
       - An 8 km background landscape of hills and mountains
       - A performance pass for modest PCs
+      - A flower patch you can grow with a slider
   - key: cooking
     title: Still cooking
     note: Planned, not built yet
@@ -25,6 +27,9 @@ lanes:
       - Something to run away from (replacing the flying pickles)
       - Rain, and a storm that rolls in mid-run
       - Better faraway scenery
+      - A rounder, earthier trail shape
+      - A part-by-part art pass on leaves, trunks, petals, roots and pebbles
+      - A fog dial
   - key: paused
     title: Back burner
     note: Tried, then paused or removed
