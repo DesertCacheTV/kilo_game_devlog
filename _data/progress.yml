@@ -1,6 +1,6 @@
 # The "How the journey is going" board on the home page.
 # Update it with each devlog. Only things you've play-tested go under "playable".
-updated: 2026-10-21
+updated: 2026-10-23
 lanes:
   - key: playable
     title: Playable now
@@ -12,13 +12,15 @@ lanes:
       - A morning sky with a big red barn
       - Warmer morning light, a blue sky and thinner fog
       - "Getting hurt: 3 HP, hit sounds, and a quick retry"
+      - Flowers that stay planted, even when stretched big
+      - Home-made grass tufts, taller than Kilo Man
   - key: building
     title: On the workbench
     note: Being built right now
     items:
       - An 8 km background landscape of hills and mountains
       - A performance pass for modest PCs
-      - A flower patch you can grow with a slider (now showing beside the trail)
+      - "Grass that leans out of Kilo Man's way, plus half-circle, ring and strip patches"
   - key: cooking
     title: Still cooking
     note: Planned, not built yet
