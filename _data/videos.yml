@@ -9,4 +9,10 @@
 #   tags: [Backyard, Run, "Devlog #2"]
 #   thumb: /assets/img/my-thumbnail.webp   # optional; otherwise YouTube's own thumbnail is used
 #   post: /2026/10/20/pickles-now-hurt/    # optional; links the clip to its devlog post
-videos: []
+videos:
+  - youtube: tFd15GGf6Bw
+    title: "First look: the grass tool"
+    date: 2026-10-23
+    description: "A quick first peek at part of the new grass tool, filling the trail with grass that gets out of Kilo Man's way. It's a rough first clip; better ones are coming."
+    tags: [Backyard, Grass, Tools]
+    post: /2026/10/23/grass-that-gets-out-of-the-way/
